@@ -1,0 +1,30 @@
+.home-banner{
+    height: 70vh;
+  background-color: #d3d3d3;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  h1{
+    font-size: 3.3rem;
+    font-weight: 600;
+
+    @media only screen and (max-width: 600px){
+        font-size: 2rem;
+    }
+  }
+}
+
+.section.section-text-overlay .text-background{
+        text-align: right;
+}
+
+@media only screen and (max-width: 600px){
+    .counters .counter{
+        margin: 40px 0;
+    }
+}
