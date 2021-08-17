@@ -1,6 +1,5 @@
 .home-banner {
   height: 70vh;
-  background-color: #d3d3d3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,15 +16,36 @@
   padding: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .home-banner {
+    background-position: -340px;
+  }
+}
+
 .home-banner h1 {
   font-size: 3.3rem;
   font-weight: 600;
+  color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
   .home-banner h1 {
     font-size: 2rem;
   }
+}
+
+.home-banner h3 {
+  color: #fff;
+}
+
+.home-banner .container .row {
+  width: 100%;
+}
+
+.home-banner .btn-primary {
+  background: transparent;
+  border-color: #fff !important;
+  color: #fff !important;
 }
 
 .section.section-text-overlay .text-background {
@@ -36,5 +56,26 @@
   .counters .counter {
     margin: 40px 0;
   }
+}
+
+.image-frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-frame img {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.image-frame:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.mser {
+  width: 90px !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
 /*# sourceMappingURL=custom.css.map */
